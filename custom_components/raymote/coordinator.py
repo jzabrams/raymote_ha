@@ -42,4 +42,5 @@ class RaymoteCoordinator(DataUpdateCoordinator[dict]):
     async def async_refresh_after_write(self) -> None:
         """The heater takes ~3s to acknowledge a write; refresh once it has."""
         await asyncio.sleep(WRITE_ACK_DELAY_SECONDS)
-        await self.async_request_refresh()
+        # not async_request_refresh: its 10s debounce would leave a second quick change stale
+        await self.async_refresh()
