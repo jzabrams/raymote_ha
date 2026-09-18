@@ -1,0 +1,12 @@
+{
+  "domain": "raymote",
+  "name": "Raypak Raymote",
+  "codeowners": ["@jzabrams"],
+  "config_flow": true,
+  "documentation": "https://github.com/jzabrams/raymote_ha",
+  "integration_type": "device",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/jzabrams/raymote_ha/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

@@ -1,0 +1,21 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Raypak Raymote",
+        "description": "Enter the device auth token from the Raymote web dashboard (Device Info).",
+        "data": {
+          "token": "Device auth token",
+          "host": "Server"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "The token was rejected.",
+      "cannot_connect": "Could not reach the Raymote server."
+    },
+    "abort": {
+      "already_configured": "This heater is already configured."
+    }
+  }
+}
